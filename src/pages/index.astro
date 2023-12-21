@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import HeroLogo from '../assets/images/alogo-4.webp'
+---
+
+<Layout title="See Sales">
+	<main>
+		<Image src={HeroLogo} alt="See Sales logo" />
+
+		<div>
+			<h1>
+				Having trouble connecting with your sales teams?
+			</h1>
+			<h1> 
+				Want help establishing meaningful and tangible sales goals?
+			</h1>
+		</div>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
