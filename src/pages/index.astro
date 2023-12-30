@@ -2,12 +2,12 @@
 import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import HeroLogo from '../assets/images/alogo-4.webp'
+import HeroLogo from '../assets/images/2000x1125.webp'
 ---
 
 <Layout title="See Sales">
 	<main>
-		<Image src={HeroLogo} alt="See Sales logo" />
+		<Image class="w-96 h-auto" src={HeroLogo} alt="See Sales logo" />
 
 		<div>
 			<h1>
@@ -23,8 +23,8 @@ import HeroLogo from '../assets/images/alogo-4.webp'
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		/* width: 800px; */
+		/* max-width: calc(100% - 2rem); */
 		font-size: 20px;
 		line-height: 1.6;
 	}

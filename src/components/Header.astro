@@ -1,6 +1,11 @@
 ---
+import { Image } from 'astro:assets'
+
+import TinyLogo from '../assets/images/unnamed.webp'
+
 ---
 <ul class="bg-gray-800 text-white flex text-2xl">
+    <Image src={TinyLogo} class="w-36 h-auto" alt="See Sales logo" />
     <li class="h-full hover:bg-gray-900 py-6 px-3 cursor-pointer">
         <a href="/">Home</a>
     </li>
