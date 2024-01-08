@@ -1,12 +1,43 @@
 ---
+import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro';
-
+import Avatar from '../assets/images/avatar.webp'
 ---
 <Layout title="About Us">
-<p class="px-8 text-lg">See Sales Management is a Specialty Wholesale Gift management firm. We have both been in the industry for 20+ years and have witnessed some of the best vendors we have seen struggle because they either did not understand the importance of rep groups and rep relationships or they did not have the time to execute everything they needed.  
+    <div class="flex flex-col">
+        <p class="py-8 font-bold text-3xl m-auto">About See Sales Management</p>
+        <p class="py-8 px-8 lg:px-64 text-lg ">See Sales Management is a Specialty Wholesale Gift management firm. We have both been in the industry for 20+ years and have witnessed some of the best vendors we have seen struggle because they either did not understand the importance of rep groups and rep relationships or they did not have the time to execute everything they needed.  
+        
+        Often, we will see brilliant and creative people successfully start a business with great product, and as that company grows they just don’t have the time to do it all. Production and development of new products takes time and care, and this can cause things to get pushed down the priority list, like meaningful rep management. 
+        
+        This is where we step in. We want to help you simplify and manage your specialty retail sales to help take your business to the next level. What you focus on is what grows and as contract sales managers, we help you to analyze your current business and create strategic plans to grow your sales. 
+        </p>
 
-Often, we will see brilliant and creative people successfully start a business with great product, and as that company grows they just don’t have the time to do it all. Production and development of new products takes time and care, and this can cause things to get pushed down the priority list, like meaningful rep management. 
+    </div>
+<div class="flex flex-col bg-gray-100 max-w-5xl m-auto rounded">
+    <h1 class="m-auto text-3xl font-bold">Our Team</h1>
+    <div class="flex">
+        <div class="px-8">
+            <div class="flex flex-col">
+                <p>Sara Enzbrenner</p>
+                <Image src={Avatar} class="w-44 h-auto" alt="Sara Enzbrenner" />
+                <p>Sara@seesalesmgmt.com</p>
+                <p>555-555-5555</p>
+            </div>
+            <p>I started in the industry as a buyer and  have moved from Rep, to showroom Manager to Operations Manager for a show room in Dallas, then did Sales Management for one of the leading bath and body vendors in the industry. Now I am living the dream and starting a Sales Management firm with one of my great friend's from the industry. I like to say that I have done it all in the last 20+ years and hope to share that knowledge with my clients.</p>
+        </div>
+        <div>
+            <div class="flex flex-col">
+                <p>Emma Sorenson</p>
+                <Image src={Avatar} class="w-44 h-auto" alt="Emma Sorenson" />
 
-This is where we step in. We want to help you simplify and manage your specialty retail sales to help take your business to the next level. What you focus on is what grows and as contract sales managers, we help you to analyze your current business and create strategic plans to grow your sales. 
-</p>
+                <p>emma@seesalesmgmt.com</p>
+                <p>555-555-5555</p>
+            </div>
+            <p>I started in this industry at 16 years old as a market temp at the Seattle show, so the home and gift industry was an obvious career choice for me after college. I have been fortunate enough to work with several of the top Home and gift vendors in the last 20+ years and I want to share my extensive knowledge in the industry with those who need/want it. My mom was a rep, so I have seen from a very young child how valuable it is to have boots on the ground. I love reps and believe in the rep model, and am so excited for this venture!
+            </p>
+        </div>
+
+    </div>
+</div>
 </Layout>
